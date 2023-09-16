@@ -1,40 +1,24 @@
 <!DOCTYPE html>
 <html>
     
-        <head>
-            <title>Kevin J. Garcia's Student Page</title>
-        </head>
-        <body>
-            <h1>Kevin Joshua Garcia</h1>
+<head>
+    <title>Kevin J. Garcia</title>
+    <h1>Kevin J Garcia</h1>
     
-            <p>You can reach me <a href="kevinjga@usc.edu">kevinjga@usc.edu</a></p>
-           
-            <h2>About me</h2>
-            <style>
-                strong{
-                    background-color: pink;
-                }
-                div{
-                    width: 800px;
+    <p> <a href="kevinjga@usc.edu">Email: kevinjga@usc.edu</a></p>
+</head>
 
-                }
-            </style>
-            
+<body>
+    <div id="wrapper">
+        <div id="left">
+            <h2>About me</h2>
             <p>My favorite color is <strong>PINK</strong></p>
-    
             <p>A frequently visted site of mine is<a href="https://www.tiktok.com">Tiktok</a></p>
-            
             <p>One of my favorite things to do is</p> 
-    
             <img src="https://cdn.pixabay.com/photo/2016/06/29/14/17/joystick-1486908_640.png" alt="Game Controller Image">
-            <style>
-                img{
-                    width:auto
-                }
-                img{
-                    height: 200px;
-                }
-            </style>
+        </div>
+
+        <div id="right">
             <h3>My current USC Registration</h3>
             <ol>
                 <li>AMST 345</li>
@@ -43,23 +27,70 @@
                 <li>ITP 104</li>
                 <li>ENG 372</li>
             </ol>
-    
-            <h4>ITP 104 completed Assignments</h4>
+
+        </div>
+       
+    </div>
+
+    <div id="footer">
+        <div id="left">
+            <h3>ITP 104 completed Assignments</h3>
             <ol>
-                <li><a href="Webresume.html">Webresume</a></li>
-                <li><a href="/Users/kevingarcia/Documents/itp104-submissions-kevinjga02/assignment_1/Webresume.html">Webresume</a></li>
-                <li><a href="/Users/kevingarcia/Documents/itp104-submissions-kevinjga02/assignment_2/assignment2.html">assignment2</a></li>
-            </ol>
-           
+             <li><a href="Webresume.html">Webresume</a></li>
+             <li><a href="/Users/kevingarcia/Documents/itp104-submissions-kevinjga02/assignment_1/Webresume.html">Webresume</a></li>
+             <li><a href="/Users/kevingarcia/Documents/itp104-submissions-kevinjga02/assignment_2/assignment2.html">assignment2</a></li>
+            </ol>  
+        </div>
+        
+        <div id="right">
+            <h3>Completed Labs</h3>
             <ol>
-                <li>End of class questionaire</li>
+             <li>Lab 1</li>
+             <li><a href="index.html">Lab 2</a></li>
             </ol>
-    
-            <h5>Completed Labs</h5>
-            <ol>
-                <li>Lab 1</li>
-                <li><a href="index.html">Lab 2</a></li>
-            </ol>
-     
-        </body>
+        </div>
+
+    </div>
+
+
+    <style>
+        #wrapper{
+            display: flex;
+            width: 950px;
+            margin-left: auto;
+            margin-right: auto;
+            
+
+        }
+        #right{
+            width: 425px;
+            background-color: aquamarine;
+            margin-left: 0px;
+            float: right;
+        }
+        #left{
+            width: 425px;
+            background-color: beige;
+            margin-right: 0px;
+            float: left;
+        }
+
+        strong{
+        background-color: pink;
+         }
+        #body{
+            margin: 0px;
+        }
+    </style>
+
+    <style>
+        img{
+         width: 60px
+        }
+        img{
+        height: 50px;
+        }
+    </style>
+            
+</body>
 </html>
