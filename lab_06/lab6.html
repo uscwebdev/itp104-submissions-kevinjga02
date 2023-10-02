@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Favorite Traditional Foods</title>
+</head>
+<body>
+    <div id="header">
+        <h1>My Favorite Traditional Dishes</h1>
+    </div>
+    
+    <h3>Photo Gallery</h3>
+
+    <div id="main">
+        
+        <div id="gallery">
+
+            <div class="img-container">
+                <img class="thumbnail" src="Mole Mexicano.jpeg" alt="Mexican Molé">
+                <p>Mole from Mexico</p>
+            </div>
+    
+            <div class="img-container">
+                <img class="thumbnail" src="Carne en su hugo.jpeg" alt="Carne en su hugo (beef bacon stew)">
+                <p>Carne en su jugo</p>
+            </div>
+    
+            <div class="img-container">
+                <img class="thumbnail" src="Pan con Pollo.jpeg" alt="Pan Con Pollo(Marinated Chicken Sandwich)">
+                <p>Pan Con Pollo from El Salvador</p>
+            </div>
+    
+            <div class="img-container">
+                <img class="thumbnail" src="Pupusas.jpeg" alt="Pupusas">
+                <p>Pupusas from El Salvador</p>
+            </div>
+    
+            <div class="img-container">
+                <img class="thumbnail" src="sopes.jpeg" alt="Sopes">
+                <p>Sopes from Mexico</p>
+            </div>
+              
+        </div>
+
+    </div>
+    
+    <style>
+        .thumbnail {
+            margin: 3px;
+            height: auto;
+            width: 100px;
+            opacity: 0.9;
+        }
+        #gallery{
+            align-items: flex-start;
+            display: flex;
+        }
+        .img-container > p {
+            visibility: hidden;
+            text-align: center;
+
+        }
+        .thumbnail:hover {
+            opacity: 0.5;
+        }
+        .thumbnail:hover + p {
+            visibility: visible;
+        }
+    </style>
+</body>
+</html>
