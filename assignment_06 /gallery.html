@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>USC Folkclorico</title>
+</head> 
+
+<body>
+    
+    <div id="navbar">
+
+        <ul id="top-menu">
+            <li>
+                <a href="assignment5.html">Home</a>
+                <ul id="sub-menu">
+                    <li><a href="">Examples of Regions</a></li>
+                    <li>
+                        <a href="">What is folkclorico?</a>
+                        <ul>
+                            <li><a href="">Our Purpose</a></li>
+                            <li><a href="">How Does it look like?</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+            <li>
+                <a href="gallery.html">Gallery</a>
+                <ul id="sub-menu">
+                    <li><a href="">Fotos</a></li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+
+    <div id="header">
+        <h1>Fotos</h1> 
+    </div>
+
+    <style>
+        #header{
+            background-image: url('USC Folk Annenberg Media .png');
+            color: beige;
+            background-size: cover;
+            text-align: center;
+            background-position: center;
+            height: 400px;
+            line-height: 400px;
+        }
+        body{
+            margin: 0px;
+        }
+        #main{
+            border: 3px solid lightgray;
+            width: 650px;
+            padding: 13px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: lightgray;
+            height: 950px;
+
+        }
+        #folk-2{
+            float: right;
+        }
+        #folk-3copy{
+            float: left;
+        }
+        #folk-3{
+            float: left;
+        }
+        #footer{
+            height: 30px;
+            line-height: 30px;
+            background-color: brown;
+            text-align: center;
+            color: beige;
+        }
+        #wrapper{
+            justify-content: center;
+            width: 879px;
+            margin-right: auto;
+            margin-left: auto;
+            display: flex;
+
+        }
+        #sidebar{
+            padding: 12px; ;
+            background-color: darkgrey;
+            width: 200px;
+            border-right: 1px solid darkgray;
+        }
+        
+    
+        #navbar {
+            
+            position: fixed;
+            top: 0px;
+            z-index: 1;
+            right: 0px;
+            left: 0px;
+
+        }
+        #navbar a {
+            height: 40px;
+            color: aliceblue;
+            text-decoration: none;
+            display: block;
+            line-height: 45px;
+            
+        }
+        #navbar li{
+            background-color: orange;
+            position: relative;
+            width: 180px;
+            text-align: center;
+        }
+        #top-menu {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+        }
+        #navbar li:hover {
+            background-color: orangered;
+            
+        }
+        #navbar ul {
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+
+        }
+        #top-menu ul {
+            display: none;
+            position: absolute;
+
+        }
+        #sub-menu ul {
+            left: 180px;
+            top: 0px;
+        }
+        #navbar li:hover > ul {
+            display: block;
+
+        }
+        .thumbnail {
+            margin: 5px;
+            opacity: 0.6;
+            height: auto;
+            width: 120px;
+            
+
+        }
+        .overlay{
+            visibility: hidden;
+            padding-top: 100px;
+            text-align: center;
+            background-color: darkgrey;
+            color: white;
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+        }
+        #gallery {
+            align-items: flex-start;
+            display: flex;
+        }
+        .thumbnail:hover {
+            opacity: 5.0;
+        }
+        .thumbnail:hover + p {
+            visibility: visible;
+        }
+        .img-container > img {
+            width: auto;
+            height: 100%;
+        }
+        .img-container > p {
+            visibility: visible;
+            text-align: center;
+        }
+        .img-container:hover > .overlay {
+            visibility: visible;
+        }
+        .img-container > .width-100 {
+            width: 100%;
+            height:auto;
+        }
+        .img-container {
+            position: relative;
+            overflow:hidden;
+            display: flex;
+
+        }
+    </style>
+
+   
+
+    </div>
+    
+    <div id="wrapper">
+
+        
+        <div id="main">
+           <div id="gallery">
+                <div class="img-container">
+                    <img class="thumbnail" src="Tamualipas.jpeg" alt="Tamualipas">
+                    <div class="overlay">USC Tamualipas</div>
+                </div>
+
+                <div class="img-container">
+                    <img class="thumbnail" src="Chihuaha #2.jpeg" alt="Chihuahua">
+                    <div class="overlay">Chihuahua USC</div>
+                </div>
+
+                <div class="img-container">
+                    <img class="thumbnail" src="Veracruz GFUSC.jpeg" alt="Veracruz">
+                    <div class="overlay">Veracruz USC</div>
+                </div>
+
+                <div class="img-container">
+                    <img class="thumbnail" src="Jalisco.jpeg" alt="Jalisco">
+                    <div class="overlay">Jalisco USC</div>
+                </div>
+
+                <div class="img-container">
+                    <img class="thumbnail" src="GFUSC Group.jpeg" alt="Group Photos">
+                    <div class="overlay">GFUSC</div>
+                </div>
+
+                <div class="img-container">
+                    <img class="thumbnail" src="GFUSC Sinaloa .jpeg" alt="Sinaloa">
+                    <div class="overlay">Sinaloa</div>
+                </div>
+
+                <div class="img-container">
+                    <img class="thumbnail" src="Chihuahua GFUSC.jpeg" alt="Chihuahua 2">
+                    <div class="overlay">Chihuahua #2</div>
+                </div>
+
+                
+
+            </div>  
+        </div>
+        
+    </div>
+    
+    
+    <div id="footer">
+        <p>Contact Us: <a href="folkclorico.usc@gmail.com">folkclorico.usc@gmail.com</a></p>
+    </div>
+
+</body>
+
+</html>
