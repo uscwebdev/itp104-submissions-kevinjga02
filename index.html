@@ -6,78 +6,104 @@
     <h1>Kevin J Garcia</h1>
     
     <p> <a href="kevinjga@usc.edu">Email: kevinjga@usc.edu</a></p>
+
+    <meta charset="utf-8">
+
+    <meta name="keywords" content="About Me, Assignments, USC, ITP">
+
+    <meta name="description" content="Kevin Garcia Student Page">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-    <div id="wrapper">
-        <div id="left">
-            <h2>About me</h2>
-            <p>My favorite color is <strong>PINK</strong></p>
-            <p>A frequently visted site of mine is<a href="https://www.tiktok.com">Tiktok</a></p>
-            <p>One of my favorite things to do is</p> 
-            <img src="https://cdn.pixabay.com/photo/2016/06/29/14/17/joystick-1486908_640.png" alt="Game Controller Image">
-        </div>
+    <div id="container">
 
-        <div id="right">
-            <h3>My current USC Registration</h3>
-            <ol>
-                <li>AMST 345</li>
-                <li>SSCI 201</li>
-                <li>MDES 201</li>
-                <li>ITP 104</li>
-                <li>ENG 372</li>
-            </ol>
-
-        </div>
+    <div id="left">
+        <h2>About me</h2>
+        
+        <p>My favorite color is <strong>PINK</strong></p>
+        
+        <p>A frequently visted site of mine is<a href="https://www.tiktok.com">Tiktok</a></p>
        
+        <p>One of my favorite things to do is</p> 
+
+        <div id="thumbnails">
+
+            <div class="thumbnail">
+                <img src="https://cdn.pixabay.com/photo/2016/06/29/14/17/joystick-1486908_640.png" alt="Game Controller Image">
+            </div>
+
+        </div>
+
+
+        <h2>ITP 104 Completed Assignments</h2>
+        <ol>
+            
+            <li><a href="/Users/kevingarcia/Documents/itp104-submissions-kevinjga02/assignment_1/Webresume.html">assignment_1</a></li>
+            <li><a href="/Users/kevingarcia/Documents/itp104-submissions-kevinjga02/assignment_2/assignment2.html">assignment2</a></li>
+            <li><a href="assignment_3/assignment3.html">assignment3</a></li>
+            <li><a href="assignment_05/assignment5.html">assignment5</a></li>
+            <li><a href="assignment_06 /assignment5.html">assignment_06</a></li>
+        </ol> 
+       
+        
+
     </div>
 
-    <div id="footer">
-        <div id="left">
-            <h3>ITP 104 completed Assignments</h3>
+    <div id="right">
+        <h2>My current USC Registration</h3>
+        <ol>
+            <li>AMST 345</li>
+            <li>SSCI 201</li>
+            <li>MDES 201</li>
+            <li>ITP 104</li>
+            <li>ENG 372</li>
+        </ol>
+
+        <h3>Completed Labs</h3>
             <ol>
-             <li><a href="Webresume.html">Webresume</a></li>
-             <li><a href="/Users/kevingarcia/Documents/itp104-submissions-kevinjga02/assignment_1/Webresume.html">Webresume</a></li>
-             <li><a href="/Users/kevingarcia/Documents/itp104-submissions-kevinjga02/assignment_2/assignment2.html">assignment2</a></li>
-             <li><a href="assignment_3/assignment3.html">assignment3</a></li>
-             <li><a href="assignment_05/assignment5.html">assignment5</a></li>
-             <li><a href="assignment_06 /assignment5.html">assignment_06</a></li>
-             
-            </ol>  
-        </div>
-        
-        <div id="right">
-            <h3>Completed Labs</h3>
-            <ol>
-             <li>Lab 1</li>
+             <li><a href="">Lab 1 text editor</a></li>
              <li><a href="index.html">Lab 2</a></li>
+             <li><a href="Webresume.html">Lab 3</a></li>
+             <li><a href="index.html">Lab 4</a></li>
              <li><a href="file:///Users/kevingarcia/Documents/itp104-submissions-kevinjga02/lab_06/lab6.html">Lab 6</a></li>
+             <li><a href="index.html">Lab 8</a></li>
             </ol>
-        </div>
+
 
     </div>
 
 
     <style>
-        #wrapper{
+        
+        #container {
             display: flex;
             width: 950px;
-            margin-left: auto;
-            margin-right: auto;
-            
-
         }
         #right{
-            width: 425px;
-            background-color: aquamarine;
+            width: 475px;
+            background-color: lightblue;
             margin-left: 0px;
-            float: right;
+            
+            
+        }
+        #thumbnails {
+            display: flex;
+        }
+        .thumbnail img{
+            width: auto;
+            height: 100%;
+        }
+        .thumbnail .width-100 {
+            width: 100%;
+            height: auto;
         }
         #left{
-            width: 425px;
-            background-color: beige;
+            width: 475px;
+            background-color: lightblue;
             margin-right: 0px;
-            float: left;
+            
         }
 
         strong{
@@ -85,16 +111,44 @@
          }
         #body{
             margin: 0px;
+            
         }
-    </style>
+        @media (max-width:767px) {
+            body {
+                background-color: gainsboro;
+            }
+            #thumbnails {
+                flex-direction: column;
+            }
+            .thumbnail img {
+                height: auto;
+                width: 100%;
+            }
+            .thumbnail {
+                height: auto;
+                width: auto;
+            }
+        }
+        @media (max-width: 991px) {
+            body{
+                background-color: salmon;
+            }
+            #thumbnails {
+                justify-content: center;
+            }
+            #left, #right {
+                border: none;
+                width: auto;
+            }
+            #container {
+                border: none;
+                width: auto;
+                flex-direction: column;
+            }
+        }
 
-    <style>
-        img{
-         width: 60px
-        }
-        img{
-        height: 50px;
-        }
+
+        
     </style>
             
 </body>
