@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 10</Title>
+    <h2>Types of Beaches</h2>
+    <style>
+        .container{
+            position: relative;
+        }
+        .image1, .image2, .image3 {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+                
+        }
+        .clearfloat {
+            clear: both;
+        }
+        #translate:hover {
+            transform: translateX(150px);
+            transform: translateY(50px);
+            transform: translate(-100px, 50px)
+        }
+        #translate {
+            transition: all 1s;
+        }
+        #rotate {
+            transition:all 1s;
+        }
+        #rotate:hover {
+            transform: rotate(-90deg);
+            transform: rotate(720deg);
+            transform: rotate(90deg);
+        }
+        #scale:hover {
+            transform: scale(3,2);
+        }
+        #scale {
+            transition: all 1s;
+        }
+        #tranform .box:hover {
+            background-color: aquamarine;
+        }
+        #transform .box{
+            line-height: 100px;
+            width: 100px;
+            height: 100px;
+        }
+        #transform .container {
+            display: inline-block;
+            margin: 9px;
+        }
+            
+        
+    </style>
+       
+</head>
+<body>
+
+    <div id="transform" class="section">
+        <div class="container">
+            <div id="translate" class="box">
+                <img src="img/Black sand beach.jpeg" alt="Black Sand Beach" class="image1">
+            </div>
+        </div> 
+
+        <div class="container">
+            <div id="scale" class="box">
+                <img src="img/pink sand.jpeg" alt="Pink Sand Beach" class="image2">
+            </div>
+        </div>
+
+        <div class="container">
+            <div id="rotate" class="box">
+                <img src="img/regular sand beach.jpeg" alt="Regular Sand Beach" class="image3">
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+
+
+
+
+
+</html>
+
