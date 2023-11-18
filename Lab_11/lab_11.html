@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Lab 11 Puzzle</title>
+    <link rel="stylesheet" href="draggabilly-master/dist/draggabilly.pkgd.min.js">
+    
+    <style>
+        .piece{
+            height: auto;
+            max-width: 100%;
+
+        }
+        .img-container {
+            flex-wrap: wrap;
+            position: relative;
+            display: flex;
+            width: 400px;
+            
+            
+            
+        }
+        h1{
+            justify-content: center;
+            
+            
+        }
+        body{
+            height: 100vh;
+            margin: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          
+
+        }
+        .piece:nth-child(1) {
+            order: 1;
+            position: relative;
+            left: 20px;
+        }
+        .piece:nth-child(2) {
+            order: 2;
+        }
+        .piece:nth-child(3) {
+            order: 3;
+            position: relative;
+            right: 10px;
+        }
+        .piece:nth-child(4) {
+            order: 4;
+        }
+        .piece:nth-child(5) {
+            order: 5;
+        }
+        .piece:nth-child(6) {
+            order: 6;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <h1>Lab 11 Puzzle</h1>
+
+    <div class="img-container">
+        <img class="piece" src="row-1-column-1.png" alt="Row 1">
+        <img class="piece" src="row-2-column-1.png" alt="Row 2">
+        <img class="piece" src="row-3-column-1.png" alt="Row 3">
+        <img class="piece" src="row-4-column-1.png" alt="Row 4">
+        <img class="piece" src="row-5-column-1.png" alt="Row 5">
+        <img class="piece" src="row-6-column-1.png" alt="Row 6">
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="drag ability/draggabilly.js"></script>
+    
+
+
+    <script>
+      var dragbilly = new Draggabilly(img-container);
+    </script>
+    
+
+</body>
+</html>
