@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Favorite Traditional Foods</title>
+
+    <style>
+        .thumbnail {
+            margin: 3px;
+            height: auto;
+            width: 100px;
+            opacity: 0.9;
+            cursor: pointer;
+        }
+        .thumbnail.clicked + p {
+            visibility: visible;
+        }
+        #gallery {
+            align-items: flex-start;
+            display: flex;
+        }
+        .img-container > p {
+            visibility: hidden;
+            text-align: center;
+        }
+        .thumbnail:hover {
+            opacity: 0.5;
+        }
+        .thumbnail.clicked {
+            border: 5px solid pink; 
+        }
+        .thumbnail:hover + p {
+            visibility: visible;
+        }
+
+        
+
+
+    </style>
+
+</head>
+<body>
+
+    <div id="header">
+        <h1>My Favorite Traditional Dishes</h1>
+    </div>
+    
+    <h3>Photo Gallery</h3>
+    
+    <div id="main">
+        <div id="gallery">
+            <div class="img-container" onclick="handleImageClick(this)">
+                <img class="thumbnail" src="Mole Mexicano.jpeg" alt="Mexican Molé">
+                <p>Mole from Mexico</p>
+            </div>
+    
+            <div class="img-container" onclick="handleImageClick(this)">
+                <img class="thumbnail" src="Carne en su hugo.jpeg" alt="Carne en su hugo (beef bacon stew)">
+                <p>Carne en su jugo</p>
+            </div>
+    
+            <div class="img-container" onclick="handleImageClick(this)">
+                <img class="thumbnail" src="Pan con Pollo.jpeg" alt="Pan Con Pollo(Marinated Chicken Sandwich)">
+                <p>Pan Con Pollo from El Salvador</p>
+            </div>
+    
+            <div class="img-container" onclick="handleImageClick(this)">
+                <img class="thumbnail" src="Pupusas.jpeg" alt="Pupusas">
+                <p>Pupusas from El Salvador</p>
+            </div>
+    
+            <div class="img-container" onclick="handleImageClick(this)">
+                <img class="thumbnail" src="sopes.jpeg" alt="Sopes">
+                <p>Sopes from Mexico</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script>
+        function handleImageClick(element) {
+            document.querySelectorAll('.thumbnail').forEach(item => {
+                item.classList.remove('clicked');
+            });
+            element.querySelector('.thumbnail').classList.add('clicked');}
+    </script>
+    
+   
+</body>
+</html>
